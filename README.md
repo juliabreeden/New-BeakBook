@@ -17,7 +17,7 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/<yourusername>/beakbook.git
+   git clone https://github.com/yourusername/beakbook.git
    cd beakbook
 1. Install the dependencies:
 
