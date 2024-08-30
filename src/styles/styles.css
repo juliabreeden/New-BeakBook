@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap");
+}
+
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+}
+
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+}
+
+@font-face {
+  font-family: "Fredoka", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap");
+}
+
+@font-face {
+  font-family: "Varela Round", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+}
+
+input::placeholder {
+  color: gray;
+}
+
+select option:disabled {
+  color: gray;
+}
+
+.nav-links {
+  display: flex;
+}
+
+/* Hide the regular navigation links and show the hamburger icon on small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block !important; /* Show the hamburger icon */
+  }
+}
+
+.mobile-menu {
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+  max-height: 300px; /* Adjust this value based on your menu's content */
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
